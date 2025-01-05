@@ -10,8 +10,10 @@ def app():
         match usuario_menu:
             case '1':
                 print('Aqui estão todos os livros já cadastrados:')
+                print()
                 catalogo = get()
-                print(catalogo)
+                for livro in catalogo:
+                    print(f"{livro["nome"]} ({livro["autor"]}) - {livro["ano_de_publicacao"]}")
             case '2':
                 pass
             case '3':
