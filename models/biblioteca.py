@@ -9,7 +9,7 @@ class Biblioteca(BaseModel):
     generos: List[str]
     
     def __str__(self):
-        return f'{self.nome}, {self.descricao}, {self.generos}'
+        return f'{self.nome}, {self.ano_de_publicacao}, {self.autor}, {self.descricao}, {self.generos}'
     
     @property
     def get_nome(self):

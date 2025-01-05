@@ -49,5 +49,16 @@
         "generos": [
             "Fição"
         ]
+    },
+    {
+        "nome": "Niketche: Uma História de Poligamia",
+        "ano_de_publicacao": 2001,
+        "autor": "Paulina Chiziane",
+        "descricao": null,
+        "generos": [
+            "Romance",
+            "Ficção",
+            "Drama"
+        ]
     }
 ]
