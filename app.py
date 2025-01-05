@@ -1,4 +1,5 @@
 from functions.menu import menu
+from functions.requisicoes import get
 
 
 def app():
@@ -8,7 +9,9 @@ def app():
 
         match usuario_menu:
             case '1':
-                pass
+                print('Aqui estão todos os livros já cadastrados:')
+                catalogo = get()
+                print(catalogo)
             case '2':
                 pass
             case '3':
