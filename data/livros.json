@@ -60,5 +60,16 @@
             "Ficção",
             "Drama"
         ]
+    },
+    {
+        "nome": "Dom Casmurro",
+        "ano_de_publicacao": 1899,
+        "autor": "Machado de Assis",
+        "descricao": "Dom Casmurro, a obra mais conhecida do escritor Machado de Assis, conta a história de Bentinho e Capitu, que, apaixonados na adolescência, têm que enfrentar um obstáculo à realização de seus anseios amorosos, pois a mãe de Bentinho, D. Glória, fez uma promessa de que seu filho seria padre.",
+        "generos": [
+            "Romance",
+            "Ficção",
+            "Realismo Literário"
+        ]
     }
 ]
