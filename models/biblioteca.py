@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List, Union
 
-class Biblioteca(BaseModel):
+class Livro(BaseModel):
     nome: str
     ano_de_publicacao: int
     autor: str

@@ -51,14 +51,14 @@
         ]
     },
     {
-        "nome": "Niketche: Uma História de Poligamia",
-        "ano_de_publicacao": 2001,
-        "autor": "Paulina Chiziane",
-        "descricao": null,
+        "nome": "O Cortiço",
+        "ano_de_publicacao": 1890,
+        "autor": "Aluísio Azevedo",
+        "descricao": "O Cortiço é um romance naturalista do brasileiro Aluísio Azevedo publicado em 1890 que denuncia a exploração e as péssimas condições de vida dos moradores das estalagens ou dos cortiços cariocas do final do século XIX e posto a denunciar o capitalismo selvagem.",
         "generos": [
             "Romance",
-            "Ficção",
-            "Drama"
+            "Literatura do naturalismo",
+            "Ficção"
         ]
     },
     {
