@@ -51,17 +51,6 @@
         ]
     },
     {
-        "nome": "O Cortiço",
-        "ano_de_publicacao": 1890,
-        "autor": "Aluísio Azevedo",
-        "descricao": "O Cortiço é um romance naturalista do brasileiro Aluísio Azevedo publicado em 1890 que denuncia a exploração e as péssimas condições de vida dos moradores das estalagens ou dos cortiços cariocas do final do século XIX e posto a denunciar o capitalismo selvagem.",
-        "generos": [
-            "Romance",
-            "Literatura do naturalismo",
-            "Ficção"
-        ]
-    },
-    {
         "nome": "Dom Casmurro",
         "ano_de_publicacao": 1899,
         "autor": "Machado de Assis",

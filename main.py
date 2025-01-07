@@ -51,9 +51,28 @@ def atualizar_livro(nome_do_livro: str, novo_livro: Union[dict, Livro]):
             break
     
     if not encontrou_livro:
-        return "Livro não foi encontrado"
+        return "Livro não encontrado"
     
     with open(caminho_dados, 'w', encoding='utf-8') as arquivo_edicao:
         json.dump(dados, arquivo_edicao, indent=4, ensure_ascii=False)
     
     return {"status": "edited", "updated_book": novo_livro}
+
+@app.delete("/livro/remover/{nome_do_livro_remocao}")
+def deletar_livro(nome_do_livro_remocao: str):
+    dados = pegar_dados_do_banco_de_dados()
+
+    encontrou_livro = False
+    for i in range(len(dados)):
+        if dados[i]["nome"] == nome_do_livro_remocao:
+            dados.pop(i)
+            encontrou_livro = True
+            break
+    
+    if not encontrou_livro:
+        return "Livro não encontrado"
+    
+    with open(caminho_dados, 'w', encoding='utf-8') as arquivo_edicao:
+        json.dump(dados, arquivo_edicao, indent=4, ensure_ascii=False)
+    
+    return {"status": "deleted", "removed_book": nome_do_livro_remocao}

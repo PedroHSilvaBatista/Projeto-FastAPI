@@ -45,3 +45,18 @@ def put(nome_do_livro: str, novo_livro: dict):
         print(f'Erro. Erro de conexão com a API: {erro_conexao}')
     except Exception as erro_geral:
         print(f'Ocorreu um erro inesperado. Mensagem de erro {erro_geral}')
+
+
+def delete(nome_do_livro_remocao: str):
+    try:
+        endpoint = f"http://localhost:8000/livro/remover/{nome_do_livro_remocao}"
+        response = requests.delete(endpoint)
+
+        if response.status_code == 200:
+            print('Livro excluído com sucesso!')
+        else:
+            print('Ocorreu um erro inesperado')
+    except requests.exceptions.ConnectionError as erro_conexao:
+        print(f'Erro. Erro de conexão com a API: {erro_conexao}')
+    except Exception as erro_geral:
+        print(f'Ocorreu um erro inesperado. Mensagem de erro {erro_geral}')
