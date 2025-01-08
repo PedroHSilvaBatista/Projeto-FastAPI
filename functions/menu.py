@@ -1,4 +1,5 @@
-def menu():
+def menu() -> None:
+    """Esta função imprime o menu principal do sistema e não possui um retorno"""
     mensagem_de_exibicao = '''
     Seja bem-vindo(a) à Library.py, seu catálogo favorito de livros digitais!
     Digite uma das opções abaixo para interagir com o sistema

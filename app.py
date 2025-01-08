@@ -1,3 +1,4 @@
+# Funções e classes importadas
 from functions.menu import menu
 from functions.requisicoes import get, post, put, delete
 from functions.encontrar_livro import encontrar_livro

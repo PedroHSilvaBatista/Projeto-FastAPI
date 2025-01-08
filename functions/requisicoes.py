@@ -1,7 +1,9 @@
+# Biblioteca utilizada 
 import requests
 
 
-def get():
+def get() -> None:
+    """Esta função realiza um método GET utilizando a API criada. Não possui retorno"""
     try:
         endpoint = 'http://localhost:8000/'
         response = requests.get(endpoint)
@@ -17,7 +19,8 @@ def get():
         print(f'Ocorreu um erro inesperados. Mensagem de erro {erro_geral}.')
 
 
-def post(livro: dict):
+def post(livro: dict) -> None:
+    """Esta função realiza um método POST utilizando a API criada. Não possui retorno"""
     try:
         endpoint = 'http://localhost:8000/livro'
         response = requests.post(endpoint, json=livro)
@@ -32,7 +35,8 @@ def post(livro: dict):
         print(f'Ocorreu um errro inesperado. Mensagem de erro {erro_geral}')
 
 
-def put(nome_do_livro: str, novo_livro: dict):
+def put(nome_do_livro: str, novo_livro: dict) -> None:
+    """Esta função realiza um método PUT utilizando a API criada. Não Possui retorno"""
     try:
         endpoint = f'http://localhost:8000/livro/{nome_do_livro}'
         response = requests.put(endpoint, json=novo_livro)
@@ -47,7 +51,8 @@ def put(nome_do_livro: str, novo_livro: dict):
         print(f'Ocorreu um erro inesperado. Mensagem de erro {erro_geral}')
 
 
-def delete(nome_do_livro_remocao: str):
+def delete(nome_do_livro_remocao: str) -> None:
+    """Esta função realiza um método DELETE utilizando a API criada. Não possui retorno"""
     try:
         endpoint = f"http://localhost:8000/livro/remover/{nome_do_livro_remocao}"
         response = requests.delete(endpoint)
