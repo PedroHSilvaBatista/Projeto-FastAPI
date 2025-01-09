@@ -49,13 +49,13 @@ Este projeto aborda conceitos de:
 
 ## Como usar
 1. Inicie o servidor local com o seguinte comando no terminal da IDE utilizada:
-   uvicorn main:app --reload
+   `uvicorn main:app --reload`
 Nota: É recomendado que a execução da API seja feita em um servidor local.
 
 2. Acesse a documentação interativa da API no navegador:
 
-  Swagger UI: /docs
-  ReDoc: /redoc
+  - Swagger UI: /docs
+  - ReDoc: /redoc
 
 3. Faça suas requisições para os endpoints da API conforme necessário utilizando o Swagger UI.
 
