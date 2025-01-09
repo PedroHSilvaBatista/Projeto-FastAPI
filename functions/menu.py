@@ -6,7 +6,7 @@ def menu() -> None:
     1 - Visualizar todo o cátalogo de livros
     2 - Adicionar um livro ao catálogo
     3 - Alterar alguma informação no catálogo
-    4 - Excluir algum livro do catálogo
+    4 - Excluir um livro do acervo
     5 - Sair do programa
 '''
     print(mensagem_de_exibicao)
